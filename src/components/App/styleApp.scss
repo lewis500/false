@@ -49,11 +49,14 @@
   // box-shadow: 1px 0px 1px 0 black;
   rect {
     stroke: white;
-    stroke-width: 2px;
+    stroke-width: 1px;
+  }
+  text{
+    text-anchor: middle;
   }
   .trueNegative {
     // fill: #aaa;
-    fill: $md-pink-700;
+    fill: $md-pink-400;
   }
   .true {
     fill: $md-light-green-400;
@@ -62,7 +65,7 @@
     fill: $md-pink-400;
   }
   .falsePositive {
-    fill: $md-pink-400;
+    fill: $md-pink-700;
   }
   .falseNegative{
     // stroke: $md-light-blue-400;
@@ -71,7 +74,7 @@
   }
   .truePositive{
     // fill: green;
-    fill: $md-light-green-500;
+    fill: $md-light-green-400;
     // stroke: $md-light-blue-400;
   }
 }

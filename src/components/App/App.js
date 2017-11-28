@@ -29,9 +29,11 @@ export default class App extends Component {
       <div className={style.container}>
         <div className={style.left}>
           <svg className={style.svg} width={width} height={height * 1.5}>
-            <g transform={translator(w * 0.2, 5)}>
+            <g transform={translator(20,20)}>
               <g transform={translator(0, 0)}>
+                <text x={w*z/2} y={-5}>positives</text>
                 <rect className={style.true} width={w * z} height={bh} />
+                <text x={w*z+w*(1-z)/2} y={-5}>negatives</text>
                 <rect
                   className={style.false}
                   width={w * (1 - z)}
