@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Chivo:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+@import "~src/styleShared.scss";
+
+//===GLOBAL STUFF====
+:global {
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    min-width: 900px;
+    margin: 0;
+    background: $background;
+    color: $fontColor;
+    font-family: "Chivo", sans-serif;
+    font-weight: 400;
+    padding: 0;
+  }
+  #root {
+    height: 100%;
+    width: 100%;
+  }
+  text {
+    fill: $fontColor;
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 12px;
+  }
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  // margin: auto;
+  // width: 500
+}
+
+.left{
+
+}
+
+.right{
+  display: flex;
+  flex-direction: column;
+}
+
+.svg {
+  // box-shadow: 1px 0px 1px 0 black;
+  rect {
+    stroke: white;
+    stroke-width: 2px;
+  }
+  .trueNegative {
+    fill: #aaa;
+  }
+  .true {
+    fill: lightblue;
+  }
+  .falsePositive {
+    fill: red;
+  }
+  .falseNegative{
+    fill: purple;
+  }
+  .truePositive{
+    fill: green;
+  }
+}
+
+.sliderContainer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
