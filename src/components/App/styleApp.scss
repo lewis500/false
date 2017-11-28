@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Chivo:300,400,700");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+@import '~material-colors/dist/colors';
 @import "~src/styleShared.scss";
 
 //===GLOBAL STUFF====
@@ -51,19 +52,27 @@
     stroke-width: 2px;
   }
   .trueNegative {
-    fill: #aaa;
+    // fill: #aaa;
+    fill: $md-pink-700;
   }
   .true {
-    fill: lightblue;
+    fill: $md-light-green-400;
+  }
+  .false{
+    fill: $md-pink-400;
   }
   .falsePositive {
-    fill: red;
+    fill: $md-pink-400;
   }
   .falseNegative{
-    fill: purple;
+    // stroke: $md-light-blue-400;
+    // fill: purple;
+    fill: $md-light-green-800;
   }
   .truePositive{
-    fill: green;
+    // fill: green;
+    fill: $md-light-green-500;
+    // stroke: $md-light-blue-400;
   }
 }
 
